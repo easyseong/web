@@ -12,6 +12,9 @@
       text-decoration: none;
 
     }
+    h2 {
+      margin: 0;
+    }
     h1 {
       font-size: 45px;
       text-align: center;
@@ -23,55 +26,40 @@
       border-right: 3px solid;
       width:200px;
       margin: 0;
-      padding: 20px;
+      padding-left: 30px;
+      padding-right: 10px;
+      padding-top: 30px;
     }
-    li {
-      padding: 5px;
+    #grid{
+      display: grid;
+      grid-template-columns: 250px 1fr;
     }
-
+    #article {
+      padding-left: 25px;
+      padding-top: 30px;
+    }
     </style>
 </head>
-<h1>우리는
-  고독할 기회가<br>
-  적기 때문에
-  외롭다</h1>
-<ul>
-<li>  <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=12153634"> 감촉에</a> </li>
-<li>  <a href = "10.html">익숙해지면</a> </li>
-<li>  <a href = "11.html">향기를</a></li>
-<li>  <a href = "12.html">잊기 쉽다.</a></li>
-<li><a href = "12.html">억압과 싸우는 사람에게</a></li>
-<li><a href = "12.html" >성찰보다 중요한 건 없다.</a></li>
-</ul>
-
-
-  <img src="book.JPG">
-
-<p>제아무리 <u>비극적인 사건</u>이라 해도 시간은 어김없이 분노의 열기를 식힌다.<br>
-  식혀진 분노는 오로지 성찰로만 지속된다.
-성찰이 사라지면 분노도 사라지며 분노가 사라지면 <strong>진실은 묻힌다.</strong> <br>
-뜨겁기만 한 분노는 결국 식기 마련이다. <br>
-그러나 부러 차갑게 식힌 분노는, <br>
-뜨거움을 내 이성과 사유에 새긴 차가운 분노는 독하게 지속된다.</p>
-
-<p>
-  <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web1-j690jy7jvy.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
+<body>
+  <h1>우리는 고독할 기회가<br>적기 때문에 외롭다</h1>
+  <div id="grid">
+    <ul>
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=12153634"> 감촉에</a> </li>
+        <li><a href = "10.html">익숙해지면</a> </li>
+        <li><a href = "11.html">향기를</a></li>
+        <li><a href = "12.html">잊기 쉽다.</a></li>
+        <li><a href = "12.html">억압과 싸우는 사람에게</a></li>
+        <li><a href = "12.html" >성찰보다 중요한 건 없다.</a></li>
+    </ul>
+    <div id = "article">
+      <h2>아포리즘</h2>
+      <p>
+        제아무리 비극적인 사건이라 해도 시간은 어김없이 분노의 열기를 식힌다. 식혀진 분노는 오로지 성찰로만 지속된다.
+        성찰이 사라지면 분노도 사라지며 분노가 사라지면 진실은 묻힌다.
+        뜨겁기만 한 분노는 결국 식기 마련이다. 그러나 부러 차갑게 식힌 분노는,
+        뜨거움을 내 이성과 사유에 새긴 차가운 분노는 독하게 지속된다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
