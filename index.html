@@ -4,12 +4,10 @@
     <title>jiseong1</title>
     <meta charset="utf-8">
     <style>
-
     body {
         margin: 0;
     }
     a {
-      color: black;
       text-decoration: none;
 
     }
@@ -54,17 +52,20 @@
     </style>
 </head>
 <body>
+  <input type="button" value="night" onclick="
+  var target =document.querySelector('body');
+    if(this.value === 'night') {
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+    }
+  ">
   <h1>우리는 고독할 기회가<br>적기 때문에 외롭다</h1>
-  <input type="button" value="night" onclick= "
-  document.querySelector('body').style.backgroundColor = 'black';
-  document.querySelector('body').style.color = 'white';
-  document.querySelector('li').style.color = 'white';
-  ">
-  <input type="button" value="day" onclick="
-  document.querySelector('body').style.backgroundColor = 'white';
-  document.querySelector('body').style.color = 'black';
-    document.querySelector('li').style.color = 'black';
-  ">
+
   <div id="grid">
     <ul>
         <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=12153634"> 감촉에</a> </li>
@@ -84,6 +85,17 @@
       </p>
     </div>
   </div>
-
+  <input type="button" value="night" onclick="
+  var target =document.querySelector('body');
+    if(this.value === 'night') {
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+    }
+  ">
 </body>
 </html>
